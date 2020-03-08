@@ -1,0 +1,61 @@
+@import "./navigation.css";
+@import "./blogpageMain.css";
+@import "./footer.css";
+@import "./aside.css";
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+header {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.backBtn {
+    position: absolute;
+    top: 15px;
+    left: 15px;    
+}
+
+.backBtn a {
+    color: #00BFA5;
+}
+
+nav {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+}
+
+main aside {
+    grid-column: 1 / 2;
+}
+
+main article {
+    grid-column: 2 / 3;
+}
+
+footer {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}

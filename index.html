@@ -4,34 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/homepage.css">
 </head>
 <body>
-    <header>
-        <h1>My fency Blog</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="./posts/postOne.html">Post 1</a></li>
-            <li><a href="#">Post 2</a></li>
-            <li><a href="#">Post 3</a></li>
-            <li><a href="#">Post 4</a></li>
-        </ul>
-    </nav>
-    <main>
-        <div class="container">
-            <div class="card">Post 1</div>
-            <div class="card">Post 2</div>
-            <div class="card">Post 3</div>
-            <div class="card">Post 4</div>
-        </div>
-    </main>
-    <footer>
-        <ul>
-            <li>facebook</li>
-            <li>linkedin</li>
-            <li>instagram</li>
-        </ul>
-    </footer>
+    <div class="container">           
+        <header>
+            <h1>My fency Blog</h1>
+        </header>
+        <nav>
+            <ul class="navList">
+                <li><a href="./posts/postOne.html">Post 1</a></li>
+                <li><a href="./posts/postTwo.html">Post 2</a></li>
+                <li><a href="./posts/postThree.html">Post 3</a></li>
+                <li><a href="./posts/postFour.html">Post 4</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="cardContainer">
+                <div class="card">
+                    <div class="topic science">Science</div>
+                    <div class="date">29.02.2020</div>
+                    <div class="shortText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</div>
+                    <div class="readMore">
+                        <a href="./posts/postOne.html">Continue Reading</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="topic arts">Arts</div>
+                    <div class="date">22.02.2020</div>
+                    <div class="shortText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</div>
+                    <div class="readMore">
+                        <a href="./posts/postTwo.html">Continue Reading</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="topic politics">Politics</div>
+                    <div class="date">02.02.2020</div>
+                    <div class="shortText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</div>
+                    <div class="readMore">
+                        <a href="./posts/postThree.html">Continue Reading</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="topic arts">Arts</div>
+                    <div class="date">07.01.2020</div>
+                    <div class="shortText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</div>
+                    <div class="readMore">
+                        <a href="./posts/postFour.html">Continue Reading</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="iconList">
+                <div class="icon"><a href="https://www.facebook.com" target="_blank"><img src="./img/001-icon-1051360.svg" alt="facebook icon"></a></div>
+                <div class="icon"><a href="https://www.instagram.com" target="_blank"><img src="./img/002-instagram.svg" alt="instagram icon"></a></div>
+                <div class="icon"><a href="https://www.linkedin.com" target="_blank"><img src="./img/003-linkedin.svg" alt="linkedin icon"></a></div>
+            </div>
+            <div class="reference">Icons erstellt von <a href="https://www.flaticon.com/de/autoren/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/de/" title="Flaticon">www.flaticon.com</a></div>
+        </footer>
+    </div>
 </body>
 </html>
