@@ -1,17 +1,19 @@
 @import "./navigation.css";
-@import "./blogpageMain.css";
 @import "./footer.css";
 @import "./aside.css";
 
 
 body {
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
+    max-width: 1400px;
 }
 
 header {
@@ -25,11 +27,21 @@ header {
 .backBtn {
     position: absolute;
     top: 15px;
-    left: 15px;    
+    left: 15px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid #808080;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.backBtn:hover {
+    background-color: #f2f2f2;
 }
 
 .backBtn a {
     color: #00BFA5;
+    text-decoration: none;
 }
 
 nav {
@@ -59,3 +71,30 @@ footer {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
 }
+
+@media only screen and (max-width: 675px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-row: 3 / 5;
+    }
+
+    main article {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    main aside {
+        grid-row: 2 / 3;
+    }
+
+    footer {
+        grid-row: 5 / 6;
+    }
+   }
+
+   @media only screen and (max-width: 535px) {
+        header h1 {
+            margin-top: 60px;
+        }
+   }
