@@ -5,12 +5,15 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
+    max-width: 1400px;
 }
 
 header {
